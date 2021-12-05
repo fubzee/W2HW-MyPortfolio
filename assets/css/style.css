@@ -1,0 +1,153 @@
+:root {
+    --all-primary-backgound: #000;
+    --all-primary-font: #fff;
+    --all-box-background:#fff;
+    --all-box-font: #000;   
+    --all-box-border: 20px;
+    --all-box-border-style: solid;
+    --all-border-radius-round: 100px;
+    --all-border-radius-oblong: 50px;
+    --all-bottom-shadow: 10px;
+    --all-box-shadow: 10px 10px 5px #darkslategray;
+    --all-font: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+}
+
+* {    
+    background: var(--all-primary-backgound);
+    color: var(--all-primary-font);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+Header{
+
+  position: fixed;
+  background-size: 100%;
+  
+}
+
+/*This is a container for the graphic and page navigation*/
+
+.Container1{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+/*This is a second container, within container 1 for the three links to the items on the page*/
+
+.Container2{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: baseline;
+  
+}
+.header-box {
+    
+/*    justify-content: flex-start; */
+    font-family: var(--all-font);
+    order: 1;
+    justify-content: center;
+/*    padding-left: 50px; */
+    background-color: var(--all-box-background);
+    color: var(--all-box-font);
+    box-shadow: var(--all-box-shadow); 
+    border: cornsilk; 
+    border-radius: var(--all-border-radius-round); 
+    border: var(--all-box-border);
+    border-style: var(--all-box-border-style);
+    
+  }
+.nav-box {
+    
+    font-family: var(--all-font);
+    float: inline-end; 
+    justify-content: center;
+    padding-top: 15px;
+/*    margin-right: 20px; */
+    font-size: 20px;
+    border-radius: var(--all-border-radius-round);
+    background-color: var(--all-box-background);
+    color: var(--all-box-font);
+    box-shadow: var(--all-box-shadow); 
+}
+
+h1 {
+    font: size 1.5em;
+    background-color: var(--all-box-background);
+    color: var(--all-box-font);
+}
+
+#MyCareerLink{
+ 
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+}
+#WorkExamplesLink{
+
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+}
+#ContactDetailsLink{
+
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+}
+ 
+main {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+
+.main-Box{
+
+    border-style: var(--all-box-border-style);
+    float: inline-start;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--all-font);
+    font-size: 20px;
+    border-radius: var(--all-border-radius);
+    background-color: var(--all-box-background);
+    color: var(--all-box-font);
+    box-shadow: var(--all-box-shadow); 
+}
+
+.Secondary-Box{
+
+    border-style: var(--all-box-border-style);
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: var(--all-font);
+    border-radius: var(--all-border-radius);
+    background-color: var(--all-box-background);
+    color: var(--all-box-font);
+    box-shadow: var(--all-box-shadow); 
+}
+
+
+
+
+footer {  
+
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    background: var(--all-primary-backgound);
+    color: var(--all-primary-font);
+       
+  }
+  
