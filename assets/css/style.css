@@ -1,29 +1,28 @@
-:root {
+:root{
     --all-primary-backgound: #000;
     --all-primary-font: #fff;
     --all-box-background:#fff;
     --all-box-font: #000;   
-    --all-box-border: 20px;
+    --all-box-border: 5px;
     --all-box-border-style: solid;
-    --all-border-radius-round: 100px;
+    --all-border-radius-round: 120px;
     --all-border-radius-oblong: 50px;
     --all-bottom-shadow: 10px;
     --all-box-shadow: 10px 10px 5px #darkslategray;
-    --all-font: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    --all-font: 'Verdana','Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', 'sans-serif';
+    --nav-border-color:#FF00FF; 
 }
 
 * {    
     background: var(--all-primary-backgound);
     color: var(--all-primary-font);
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  /*  box-sizing: border-box;*/
 }
 
 Header{
 
   position: fixed;
-  background-size: 100%;
+  background-size: auto;
   
 }
 
@@ -34,120 +33,264 @@ Header{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-
+  align-content: space-around;
+  justify-content: space-between;
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
+  
 }
-
+/* The header box is contained within Container1 and houses the image and header h1*/
+.header-box{
+    
+  font-family: var(--all-font);
+  justify-content: center;
+  background-color: var(--all-box-background);
+  /*box-shadow: var(--all-box-shadow); */
+  border: cornsilk; 
+  border-radius: var(--all-border-radius-round); 
+  border: var(--all-box-border);
+  border-style: var(--all-box-border-style);
+    
+  }
 /*This is a second container, within container 1 for the three links to the items on the page*/
 
 .Container2{
-  
+  flex: 0 0 1;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: baseline;
+  align-content: space-around;
+  gap: 10px;
+  gap: 10px 20px; /* row-gap column gap */
+  row-gap: 10px;
+  column-gap: 20px;
   
 }
-.header-box {
+
+/* The nav-box styles the three areas that contain the links to items on the page */ 
+.nav-box{
     
-/*    justify-content: flex-start; */
-    font-family: var(--all-font);
-    order: 1;
-    justify-content: center;
-/*    padding-left: 50px; */
-    background-color: var(--all-box-background);
-    color: var(--all-box-font);
-    box-shadow: var(--all-box-shadow); 
-    border: cornsilk; 
-    border-radius: var(--all-border-radius-round); 
-    border: var(--all-box-border);
-    border-style: var(--all-box-border-style);
-    
-  }
-.nav-box {
-    
-    font-family: var(--all-font);
-    float: inline-end; 
-    justify-content: center;
-    padding-top: 15px;
-/*    margin-right: 20px; */
-    font-size: 20px;
-    border-radius: var(--all-border-radius-round);
-    background-color: var(--all-box-background);
-    color: var(--all-box-font);
-    box-shadow: var(--all-box-shadow); 
+  font-family: var(--all-font);
+  justify-content: space-around;
+  background-color: var(--all-box-background);
+  box-shadow: var(--all-box-shadow); 
+  border-radius: var(--all-border-radius-round); 
+  border: var(--all-box-border);
+  border-style: var(--all-box-border-style);
 }
 
-h1 {
-    font: size 1.5em;
-    background-color: var(--all-box-background);
-    color: var(--all-box-font);
-}
+#headimg{
+  
+  border-radius: var(--all-border-radius-oblong);
+  mix-blend-mode: luminosity;
+  position: sticky;
+  height:100px;
+  width:100px;}
 
-#MyCareerLink{
+#catimg{
+  
+  /*padding:100px;*/
+  margin: 0%;
+  height: 800px;
+  width:900;
+  mix-blend-mode: exclusion ;
  
+ 
+}
+/* The main-area covers the main section or body of the page contains two areas; Main Box and Container 3. */ 
+/* The Main Box captures THE article and text content */
+
+.Main-Box{
+   
+  text-align: center;
+  font-family: var(--all-font);
+  justify-content: center;
+  background-color: var(--all-box-background);
+  color: var(--all-primary-font);
+  border-radius: var(--all-border-radius-oblong); 
+  border-style: var(--all-box-border-style);
+
+}
+
+/* Container 3 captures images and links to external bodies of work */
+
+.Container3{
+  
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    align-content: space-around;
+    gap: 10px;
+    gap: 10px 20px; /* row-gap column gap */
+    row-gap: 10px;
+    column-gap: 20px;
+    background-color: var(--all-box-background);
+    border-radius: var(--all-border-radius-oblong);
+  }
+   
+h1{
+  
+  margin-top: 26px;
+  font-family: var(--all-font);  
+  font-size: 1.2em;
+  font: small-caption;
+  text-align: center;
   background-color: var(--all-box-background);
   color: var(--all-box-font);
 }
-#WorkExamplesLink{
 
+h2{
+  margin: 0%;
+  text-align: center;
+  font-family: var(--all-font);
+  justify-self: center;
+}
+
+h3{
+
+  margin: 0%;
   background-color: var(--all-box-background);
   color: var(--all-box-font);
+  font-family: var(--all-font);
+  
+  
+}
+
+ul{
+  margin: 0%;
+  background-color: var(--all-box-background);
+}
+
+p{
+
+  margin: 0%;
+  font-family: var(--all-font);
+  text-align: justify;
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+}
+
+
+
+#header-box img{
+   
+  border-radius: var(--all-border-radius-oblong);
+  mix-blend-mode: luminosity;
+  position: sticky;
+  height:100px;
+  width:100px;
+}
+
+#img2{
+
+  
+  position:sticky;
+  margin: 0%;
+  text-align: center;
+  background-color: var(--all-box-background);
+}
+
+#Grouping{
+  
+  margin: 0%;
+  padding-top: 10px; 
+  padding-bottom: 5px;
+  background-color: var(--all-box-background);
+  position: relative;
+}
+#MyCareerLink{
+  
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+  font-size: 20px;
+  font: small-caption;
+  text-align: center;
+  border-radius: var(--all-border-radius-oblong);
+}
+
+.nav-box:hover{
+
+  border-color: var(--nav-border-color);
+} 
+
+#WorkExamplesLink{
+  
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+  font-size: 20px;
+  font: small-caption;
+  text-align: center;
+  border-radius: var(--all-border-radius-oblong);
 }
 #ContactDetailsLink{
+  
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+  font-size: 20px;
+  font: small-caption;
+  text-align: center;
+  border-radius: var(--all-border-radius-oblong);
+}
+article p{
 
+  margin: 0%;
+  background-color: var(--all-box-background);
+  color: var(--all-box-font);
+  font-family: var(--all-font);
+}
+
+#img phone email linkedin {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+  main{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+  }
+}
+
+.card {
+  
+  margin: 0%; 
   background-color: var(--all-box-background);
   color: var(--all-box-font);
 }
- 
-main {
-    display: flex;
-    /* Forces elements to the next line if they don't fit */
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-top: 2%;
-  }
 
-.main-Box{
+.card:hover{
 
-    border-style: var(--all-box-border-style);
-    float: inline-start;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: var(--all-font);
-    font-size: 20px;
-    border-radius: var(--all-border-radius);
-    background-color: var(--all-box-background);
-    color: var(--all-box-font);
-    box-shadow: var(--all-box-shadow); 
+  border-color: var(--nav-border-color);
+    
 }
 
-.Secondary-Box{
+#ContactDetails p {
 
-    border-style: var(--all-box-border-style);
-    float: right;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: var(--all-font);
-    border-radius: var(--all-border-radius);
-    background-color: var(--all-box-background);
-    color: var(--all-box-font);
-    box-shadow: var(--all-box-shadow); 
+  margin: 0%;
+  text-align: justify; 
+  font-family: var(--all-font);
 }
 
+footer{  
 
+  justify-content: center;
+  padding: 2%;
+  background: var(--all-primary-backgound);
+  color: var(--all-primary-font);
+}
 
+footer p {
 
-footer {  
-
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background: var(--all-primary-backgound);
-    color: var(--all-primary-font);
-       
-  }
+  color: var(--all-primary-font);
+  background-color:var(--all-primary-backgound);
+  text-align: center;
   
+
+}
