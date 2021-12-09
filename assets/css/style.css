@@ -93,10 +93,10 @@ Header{
 
 #catimg{
   
-  /*padding:100px;*/
+  
   margin: 0%;
-  height: 800px;
-  width:900px;
+  height:800px;
+  width:auto;
   mix-blend-mode: exclusion ;
  
  
