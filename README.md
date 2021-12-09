@@ -18,6 +18,8 @@ I included the  git site links to redirect a visitor to the pages that reflect s
 
 Another issue is the area that captures the name and image of myslef displays as a small cut-out to the top-left on Chrome and Edge (other browsers have not ben checked) but for some reason has not rendered well on the git page and displays as a stretched cut-out running the length of the screen.  I was not able to determine what the cause was of that so feedback as to what I need to look out for would be appreciated..
 
+I am also not sure how to make the article and career highlight list fit into the rounded box, both elements have square corners that overlapped the effect of the rounded box, if I applied the same styling it removed too much of the content.
+
 In all I used this assignment to practice key elements covered on the course focusing on responsive, resue of elements, navigation and flex-boxes.
 
 Thank-you!
