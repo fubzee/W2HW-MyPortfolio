@@ -6,22 +6,20 @@ https://fubzee.github.io/W2HW-MyPortfolio/
 
 **The Assignment:** 
 
-The personal portfolio page was built so as to resemble a dark and dramatic foreground foreground revelaing content as "cut-outs" that reveal some information about my career, web development examples done to date and providing some contact information.  
+The personal portfolio page was built so as to resemble a dark and dramatic foreground with content revealed as "cut-outs" providing some information about my career, web development examples (projects) done to date and providing some contact information.  
 
-To ensure consist application of the two primary monochromatic colours chosen these were declared as variables and reused when application was required.  The site will present a small photo and my name, with three options to scroll down to :
+![image](https://user-images.githubusercontent.com/94102473/148665995-fa22118b-bbb1-4784-9d01-d90030900df5.png)
+
+To ensure consist application of the two primary monochromatic colours chosen these were declared as variables and reused when application was required.  The site will present a small photo of myself and my name, with three options to 'jump to"to :
 
 - Summary of my career
 - Sample Work
 - Contact details
 
-The page was divided into sections and when rendered on the browser displays a dramatic first page with a moody looking cat (I love cats) with a pop of pink.  This pink colour was then used to highlight accessable parts on the although, in the HTML form the links worked but I could not get them to navigate when I accessed the content via the browser.  The pink border will highlight the links that reference the other part of the page but it did not scroll to the section so that needs to be investigated and fixed.  
+When you hover on the link a small frame will appear highlighting the option for selection.  The page was divided into sections and when rendered on the browser displays a dramatic first page with a moody looking cat (I love cats) with a pop of pink.  This pink colour was then used to highlight accessable parts (links on the page). 
 
-I included the  git site links to redirect a visitor to the pages that reflect some of my earlier but again the links would not work so this will also require investigation and fixing.
+I included the git links to redirect a visitor to the pages/sites that reflect some of my earlier attempts at web development, you can navigate to these by clicking on the image.  The image will pop out as a photo when you hover over it.  
 
-Another issue is the area that captures the name and image of myslef displays as a small cut-out to the top-left on Chrome and Edge (other browsers have not ben checked) but for some reason has not rendered well on the git page and displays as a stretched cut-out running the length of the screen.  I was not able to determine what the cause was of that so feedback as to what I need to look out for would be appreciated..
-
-I am also not sure how to make the article and career highlight list fit into the rounded box, both elements have square corners that overlapped the effect of the rounded box, if I applied the same styling it removed too much of the content.
-
-In all I used this assignment to practice key elements covered on the course focusing on responsive, resue of elements, navigation and flex-boxes.
+Resolved previous display issues in terms of responsivenenss and presentation on the page.
 
 Thank-you!
